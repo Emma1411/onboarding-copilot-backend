@@ -1,0 +1,14 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    image: onboarding-copilot-backend
+    container_name: onboarding-copilot-backend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.env
+    environment:
+      NODE_ENV: production
+      PORT: "3000"
