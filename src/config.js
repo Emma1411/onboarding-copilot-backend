@@ -6,7 +6,7 @@ const num = (value, fallback) =>
 
 module.exports = {
   port: num(process.env.PORT, 3000),
-  frontOrigin: process.env.FRONT_ORIGIN || 'http://localhost:4200',
+  frontOrigin: process.env.FRONT_ORIGIN || 'https://onboarding-copilot-front.vercel.app',
   docsDir: path.join(__dirname, '..', 'docs'),
 
   ai: {
